@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pinjam"
+    android:padding="8dp"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="17sp"
+        android:id="@+id/tvNamaBuku"
+        android:text="Pinjam: Nama Buku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ilnama"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etNamaPeminjam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ilnama"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ilLamaPinjam"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etLamaPinjam"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lama Pinjam" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btnPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilLamaPinjam"
+        android:text="Pinjam" />
+</LinearLayout>
